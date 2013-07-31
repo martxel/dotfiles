@@ -1,41 +1,11 @@
 set nocompatible
 
-" Required by Vundle
-filetype off
+" Vundle bundles
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'gmarik/vundle'
-
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'kien/ctrlp.vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'godlygeek/tabular'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'bling/vim-airline'
-Bundle 'ervandew/supertab'
-
-" Required by vim-snipmate
-Bundle 'MarcWeber/vim-addon-mw-utils'
-" Required by vim-snipmate
-Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
-
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'nanotech/jellybeans.vim'
-
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-haml'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'pangloss/vim-javascript'
-Bundle 'fsouza/go.vim'
-
-" Filetype plugins - Required by Vundle
+" Filetype plugins
 filetype plugin indent on
 
 " Autoread changes

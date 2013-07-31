@@ -7,6 +7,7 @@ FORCE=0
 # src and dst for each file/dir
 declare -A dotfiles
 dotfiles[$PWD/vimrc]=$DST/.vimrc
+dotfiles[$PWD/vimrc.bundles]=$DST/.vimrc.bundles
 dotfiles[$PWD/gemrc]=$DST/.gemrc
 dotfiles[$PWD/tmux.conf]=$DST/.tmux.conf
 dotfiles[$PWD/gitconfig]=$DST/.gitconfig
@@ -59,3 +60,10 @@ do
   process_file $dotfile
   printf "\n"
 done
+
+read -p "Do you want to run vim +BundleInstall? (Y/n) " -r
+if [[ ! $REPLY =~ ^[Nn]$ ]]
+then
+  vim -u ~/.vimrc.bundles +BundleInstall +qall
+fi
+printf "\nDone!\n"
