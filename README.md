@@ -7,4 +7,6 @@
 2. Change directory to `dotfiles` and run the installation script:
 
         cd dotfiles
-        ./install.sh # ./install.sh -f to force deletion of existing files
+        ./install.sh
+
+    Run with `-f` to automatically replace existing files.
