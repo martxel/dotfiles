@@ -1,4 +1,5 @@
 ## Installation
+
 1. Clone the repository recursively:
 
     git clone --recursive https://github.com/martxel/dotfiles
