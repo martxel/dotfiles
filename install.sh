@@ -8,10 +8,13 @@ FORCE=0
 declare -A dotfiles
 dotfiles[$PWD/vimrc]=$DST/.vimrc
 dotfiles[$PWD/vimrc.bundles]=$DST/.vimrc.bundles
+dotfiles[$PWD/vim]=$DST/.vim
 dotfiles[$PWD/gemrc]=$DST/.gemrc
 dotfiles[$PWD/tmux.conf]=$DST/.tmux.conf
 dotfiles[$PWD/gitconfig]=$DST/.gitconfig
-dotfiles[$PWD/vim]=$DST/.vim
+dotfiles[$PWD/oh-my-zsh]=$DST/.oh-my-zsh
+dotfiles[$PWD/zshrc]=$DST/.zshrc
+dotfiles[$PWD/zalias]=$DST/.zalias
 
 # set force flag
 if [[ $1 = -f ]]
