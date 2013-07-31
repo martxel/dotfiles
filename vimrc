@@ -110,6 +110,7 @@ autocmd FileType go setlocal shiftwidth=4 tabstop=4 noexpandtab
 
 " Display extra whitespace
 set listchars=tab:»·,trail:·
+set list
 
 " Backspace
 set backspace=indent,eol,start
