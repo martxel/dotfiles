@@ -123,8 +123,8 @@ set linebreak
 set textwidth=80
 
 " 200 char lines for html and text
-autocmd FileType html setlocal textwidth=200 
-autocmd FileType text setlocal textwidth=200 
+autocmd FileType html setlocal textwidth=200
+autocmd FileType text setlocal textwidth=200
 
 " UTF-8 encoding
 set encoding=utf8
@@ -200,19 +200,20 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global=1
 " syntastic
 " status line format
 let g:syntastic_stl_format = ' %E{Err: %fe #%e}%B{ | }%W{Warn: %fw #%w} '
-" active mode disabled for sass and scss 
+" active mode disabled for sass and scss
 let g:syntastic_mode_map = {
   \'mode': 'active',
   \'active_filetypes': [],
   \'passive_filetypes': ['sass', 'scss']}
 
 " vim-airline
-let g:airline_left_sep=''
-let g:airline_right_sep=''
 let g:airline_enable_branch=1
 let g:airline_enable_syntastic=1
 let g:airline_theme='light'
+let g:airline_powerline_fonts=0
 
+" vim-airline: custom colors for syntastic and warnings
+hi WarningMsg term=standout ctermbg=88 guibg=#902020
 " vim-airline: avoid delay from I to N mode
 set ttimeoutlen=50
 
