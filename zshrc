@@ -47,8 +47,11 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
 
-# 256 color gnome terminal
-export TERM="gnome-256color"
+# 256 color terminal
+export TERM="xterm-256color"
+
+# screen-256color for tmux
+[ -n "$TMUX" ] && export TERM=screen-256color
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
