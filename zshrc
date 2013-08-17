@@ -40,11 +40,13 @@ ZSH_THEME="bira"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rbenv ssh-agent gem ruby bundler capistrano tmux rake)
+plugins=(bundler gem git rails4 rbenv ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# PATH
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
 
 # 256 color terminal
@@ -57,7 +59,7 @@ export TERM="xterm-256color"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# no autocorrection
+# No autocorrection
 unsetopt correct_all
 
 # editor
