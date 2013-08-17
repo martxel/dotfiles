@@ -27,12 +27,8 @@ map <c-space> ?
 
 " Syntax highlighting
 syntax enable
-set background=light
-colorscheme jellybeans
-if has('gui_running')
-  set guioptions-=T
-  colorscheme jellybeans
-endif
+set background=dark
+colorscheme Tomorrow-Night
 
 " Highlight JSON as javascript
 autocmd BufNewFile,BufRead *.json set ft=javascript
@@ -209,7 +205,7 @@ let g:syntastic_mode_map = {
 " vim-airline
 let g:airline_enable_branch=1
 let g:airline_enable_syntastic=1
-let g:airline_theme='light'
+let g:airline_theme='tomorrow'
 let g:airline_powerline_fonts=0
 
 " vim-airline: custom colors for syntastic and warnings
