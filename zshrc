@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="bira"
+ZSH_THEME="martxel"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -45,19 +45,6 @@ plugins=(bundler gem git rails4 rbenv ssh-agent)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-
-# PATH
-export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
-
-# 256 color terminal
-export TERM="xterm-256color"
-
-# screen-256color for tmux
-[ -n "$TMUX" ] && export TERM=screen-256color
-
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 # No autocorrection
 unsetopt correct_all

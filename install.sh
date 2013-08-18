@@ -15,6 +15,7 @@ dotfiles[$PWD/gitconfig]=$DST/.gitconfig
 dotfiles[$PWD/oh-my-zsh]=$DST/.oh-my-zsh
 dotfiles[$PWD/zshrc]=$DST/.zshrc
 dotfiles[$PWD/zalias]=$DST/.zalias
+dotfiles[$PWD/zprofile]=$DST/.zprofile
 dotfiles[$PWD/martxel.zsh-theme]=$DST/.oh-my-zsh/custom/themes/martxel.zsh-theme
 
 # set force flag
