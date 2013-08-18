@@ -204,12 +204,14 @@ let g:syntastic_mode_map = {
 
 " vim-airline
 let g:airline_enable_branch=1
+let g:airline_branch_empty_message='no branch'
 let g:airline_enable_syntastic=1
+let g:airline_enable_tagbar=1
 let g:airline_theme='tomorrow'
 let g:airline_powerline_fonts=0
 
 " vim-airline: custom colors for syntastic and warnings
-hi WarningMsg term=standout ctermbg=88 guibg=#902020
+hi WarningMsg term=standout ctermbg=236
 " vim-airline: avoid delay from I to N mode
 set ttimeoutlen=50
 
