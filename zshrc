@@ -56,7 +56,7 @@ export EDITOR="vim"
 # Automatically reattach to an existing session or start a new one
 if which tmux 2>&1 >/dev/null; then
   if [[ -z ${TMUX} ]]; then
-    tmux -CC attach || tmux new
+    tmux attach 2>/dev/null || tmux new
   fi
 fi
 
