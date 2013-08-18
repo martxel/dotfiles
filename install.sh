@@ -15,6 +15,7 @@ dotfiles[$PWD/gitconfig]=$DST/.gitconfig
 dotfiles[$PWD/oh-my-zsh]=$DST/.oh-my-zsh
 dotfiles[$PWD/zshrc]=$DST/.zshrc
 dotfiles[$PWD/zalias]=$DST/.zalias
+dotfiles[$PWD/martxel.zsh-theme]=$DST/.oh-my-zsh/custom/themes/martxel.zsh-theme
 
 # set force flag
 if [[ $1 = -f ]]
@@ -54,7 +55,27 @@ function process_file() {
       delete_and_link $file
     fi
   else
-    link $file
+    local target_dir=`dirname ${dotfiles[$file]}`
+    if [[ ! -e $target_dir ]]
+    then
+      if [[ "${FORCE}" -eq 0 ]]
+      then
+        printf $target_dir" doesn't exist.\n"
+        read -p "Do you want to create it? (Y/n) " -r
+        if [[ ! $REPLY =~ ^[Nn]$ ]]
+        then
+          mkdir -p $target_dir
+          printf $target_dir" created.\n"
+          link $file
+        fi
+      else
+        mkdir -p $target_dir
+        printf $target_dir" created.\n"
+        link $file
+      fi
+    else
+      link $file
+    fi
   fi
 }
 
