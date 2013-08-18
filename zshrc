@@ -55,7 +55,7 @@ export EDITOR="vim"
 # Auto run tmux if installed
 # Automatically reattach to an existing session or start a new one
 if which tmux 2>&1 >/dev/null; then
-  test -z ${TMUX} && (tmux attach 2> /dev/null || tmux new)
+  test -z ${TMUX} && (tmux attach || tmux new)
 fi
 
 # Custom aliases
