@@ -17,6 +17,7 @@ dotfiles[$PWD/zshrc]=$DST/.zshrc
 dotfiles[$PWD/zalias]=$DST/.zalias
 dotfiles[$PWD/zprofile]=$DST/.zprofile
 dotfiles[$PWD/martxel.zsh-theme]=$DST/.oh-my-zsh/custom/themes/martxel.zsh-theme
+dotfiles[$PWD/ssh/config]=$DST/.ssh/config
 
 # set force flag
 if [[ $1 = -f ]]
