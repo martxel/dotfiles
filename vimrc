@@ -117,6 +117,7 @@ set whichwrap+=<,>,h,l
 " 80 char lines
 set linebreak
 set textwidth=80
+set colorcolumn=81
 
 " 200 char lines for html and text
 autocmd FileType html setlocal textwidth=200
