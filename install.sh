@@ -26,7 +26,7 @@ fi
 
 # Link file
 function link() {
-  ln -sv $1 ${dotfiles[$file]}
+  ln -sv $1 ${dotfiles[$1]}
 }
 
 # Delete file
