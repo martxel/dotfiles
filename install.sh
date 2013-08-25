@@ -6,18 +6,18 @@ FORCE=0
 
 # SRC and DST for each file/dir
 declare -A dotfiles
-dotfiles[$PWD/vimrc]=$DST/.vimrc
-dotfiles[$PWD/vimrc.bundles]=$DST/.vimrc.bundles
-dotfiles[$PWD/vim]=$DST/.vim
-dotfiles[$PWD/gemrc]=$DST/.gemrc
-dotfiles[$PWD/tmux.conf]=$DST/.tmux.conf
-dotfiles[$PWD/gitconfig]=$DST/.gitconfig
-dotfiles[$PWD/oh-my-zsh]=$DST/.oh-my-zsh
-dotfiles[$PWD/zshrc]=$DST/.zshrc
-dotfiles[$PWD/zalias]=$DST/.zalias
-dotfiles[$PWD/zprofile]=$DST/.zprofile
-dotfiles[$PWD/martxel.zsh-theme]=$DST/.oh-my-zsh/custom/themes/martxel.zsh-theme
-dotfiles[$PWD/ssh/config]=$DST/.ssh/config
+dotfiles[$SRC/vimrc]=$DST/.vimrc
+dotfiles[$SRC/vimrc.bundles]=$DST/.vimrc.bundles
+dotfiles[$SRC/vim]=$DST/.vim
+dotfiles[$SRC/gemrc]=$DST/.gemrc
+dotfiles[$SRC/tmux.conf]=$DST/.tmux.conf
+dotfiles[$SRC/gitconfig]=$DST/.gitconfig
+dotfiles[$SRC/oh-my-zsh]=$DST/.oh-my-zsh
+dotfiles[$SRC/zshrc]=$DST/.zshrc
+dotfiles[$SRC/zalias]=$DST/.zalias
+dotfiles[$SRC/zprofile]=$DST/.zprofile
+dotfiles[$SRC/martxel.zsh-theme]=$DST/.oh-my-zsh/custom/themes/martxel.zsh-theme
+dotfiles[$SRC/ssh/config]=$DST/.ssh/config
 
 # Set force flag
 if [[ $1 = -f ]]; then
