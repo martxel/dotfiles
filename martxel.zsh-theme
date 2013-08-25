@@ -1,8 +1,7 @@
 # martxel.zsh-theme - ZSH Theme
 
 # colors
-if [[ $TERM = *256color* ]];
-then
+if [[ $TERM = *256color* ]]; then
   green="%F{84}"
   blue="%F{153}"
   red="%F{167}"

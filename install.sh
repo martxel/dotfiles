@@ -58,7 +58,7 @@ function process_file() {
   else
     # Directory that may contain the target file/dir
     local target_dir=`dirname ${dotfiles[$file]}`
-    # If target directory exists
+    # If target directory doesn't exist
     if [[ ! -e $target_dir ]]; then
       if [[ "${FORCE}" -eq 0 ]]; then
         printf $target_dir" doesn't exist.\n"
