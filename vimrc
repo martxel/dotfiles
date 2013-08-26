@@ -215,7 +215,7 @@ let g:airline_branch_empty_message='no branch'
 let g:airline_enable_syntastic=1
 let g:airline_enable_tagbar=1
 let g:airline_theme='tomorrow'
-let g:airline_powerline_fonts=0
+let g:airline_powerline_fonts=1
 
 " vim-airline: custom colors for syntastic and warnings
 hi WarningMsg term=standout ctermbg=236
