@@ -7,3 +7,6 @@ alias ssh="TERM=screen-256color ssh"
 alias untar="tar -zxvf"
 alias untarbz2="tar -jxvf"
 alias targz="tar -pczf"
+
+# bower
+alias bower="noglob bower"
