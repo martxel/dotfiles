@@ -19,11 +19,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'bling/vim-airline'
 Bundle 'ervandew/supertab'
 
-" Required by vim-snipmate
-Bundle 'MarcWeber/vim-addon-mw-utils'
-" Required by vim-snipmate
-Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
+Bundle 'MarcWeber/ultisnips'
 Bundle 'honza/vim-snippets'
 
 Bundle 'altercation/vim-colors-solarized'
