@@ -32,6 +32,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
 Bundle 'fsouza/go.vim'
 Bundle 'othree/html5.vim'
+Bundle 'slim-template/vim-slim'
 
 " Filetype plugins - Required by Vundle
 filetype plugin indent on
