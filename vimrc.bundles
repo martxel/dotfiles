@@ -19,7 +19,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'bling/vim-airline'
 Bundle 'ervandew/supertab'
 
-Bundle 'MarcWeber/ultisnips'
+Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
 
 Bundle 'altercation/vim-colors-solarized'
