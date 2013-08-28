@@ -120,6 +120,9 @@ set linebreak
 set textwidth=80
 set colorcolumn=81
 
+" No automatic linebreak, use gq in V mode
+set formatoptions-=t
+
 " 200 char lines for html and text
 autocmd FileType html setlocal textwidth=200
 autocmd FileType text setlocal textwidth=200
