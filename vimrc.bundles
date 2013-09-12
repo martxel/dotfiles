@@ -20,7 +20,6 @@ Bundle 'bling/vim-airline'
 Bundle 'ervandew/supertab'
 
 Bundle 'SirVer/ultisnips'
-Bundle 'honza/vim-snippets'
 
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'nanotech/jellybeans.vim'
