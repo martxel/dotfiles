@@ -230,7 +230,6 @@ set ttimeoutlen=50
 let g:SuperTabDefaultCompletionType='context'
 
 " UltiSnips
-let g:UltiSnips = {}
-let g:UltiSnips.ExpandTrigger="<tab>"
-let g:UltiSnips.JumpForwardTrigger="<tab>"
-let g:UltiSnips.JumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
