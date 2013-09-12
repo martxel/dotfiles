@@ -25,6 +25,7 @@ Bundle 'honza/vim-snippets'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'w0ng/vim-hybrid'
 
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'

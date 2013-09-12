@@ -28,7 +28,7 @@ map <c-space> ?
 " Syntax highlighting
 syntax enable
 set background=dark
-colorscheme Tomorrow-Night
+colorscheme hybrid
 
 " Highlight JSON as javascript
 autocmd BufNewFile,BufRead *.json set ft=javascript
