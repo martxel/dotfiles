@@ -102,6 +102,7 @@ autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType c setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType python setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType php setlocal shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType go setlocal shiftwidth=4 tabstop=4 noexpandtab
 autocmd FileType snippets setlocal shiftwidth=4 tabstop=4 noexpandtab
 
