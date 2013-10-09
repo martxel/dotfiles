@@ -28,10 +28,7 @@ map <c-space> ?
 " Syntax highlighting
 syntax enable
 set background=dark
-colorscheme hybrid
-
-" Highlight JSON as javascript
-autocmd BufNewFile,BufRead *.json set ft=javascript
+colorscheme jellybeans
 
 " Always show status line
 set laststatus=2
@@ -121,13 +118,6 @@ set linebreak
 set textwidth=80
 set colorcolumn=81
 
-" No automatic linebreak, use gq in V mode
-set formatoptions-=t
-
-" 200 char lines for html and text
-autocmd FileType html setlocal textwidth=200
-autocmd FileType text setlocal textwidth=200
-
 " UTF-8 encoding
 set encoding=utf8
 
@@ -161,9 +151,9 @@ set viminfo^=%
 
 " Return to last edit position when opening files
 autocmd BufReadPost *
-     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-     \   exe "normal! g`\"" |
-     \ endif
+  \ if line("'\"") > 0 && line("'\"") <= line("$") |
+  \   exe "normal! g`\"" |
+  \ endif
 
 
 " Don't close window when deleting a buffer
@@ -219,12 +209,11 @@ let g:airline_enable_branch=1
 let g:airline_branch_empty_message='no branch'
 let g:airline_enable_syntastic=1
 let g:airline_enable_tagbar=1
-let g:airline_theme='tomorrow'
+let g:airline_theme='jellybeans'
 let g:airline_powerline_fonts=1
-
-" vim-airline: custom colors for syntastic and warnings
+" vim-airline - custom colors for syntastic and warnings
 hi WarningMsg term=standout ctermbg=236
-" vim-airline: avoid delay from I to N mode
+" vim-airline - avoid delay from I to N mode
 set ttimeoutlen=50
 
 " supertab
