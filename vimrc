@@ -35,7 +35,10 @@ set laststatus=2
 
 " Line numbers
 set number
-set numberwidth=5
+set relativenumber
+autocmd InsertEnter * :set norelativenumber
+autocmd InsertLeave * :set relativenumber
+set numberwidth=3
 
 " Show current position
 set ruler
