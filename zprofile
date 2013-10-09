@@ -11,5 +11,8 @@ export TERM="xterm-256color"
 # screen-256color for tmux
 [ -n "$TMUX" ] && export TERM=screen-256color
 
+# add ~/bin to $PATH
+[ -n "$HOME/bin" ] && export PATH="$HOME/bin:$PATH"
+
 # virtualenvwrapper
 export WORKON_HOME=~/.pyenv
