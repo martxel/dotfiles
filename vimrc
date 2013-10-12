@@ -242,6 +242,9 @@ nnoremap <leader>t :tabe .<CR>
 " syntastic
 nnoremap <leader>c :w!<CR>:SyntasticCheck<CR>
 
+" ctags
+nnoremap <leader>td <C-]>
+
 " ctrlp
 nnoremap <leader>f :CtrlP<CR><F5>
 nnoremap <leader>b :CtrlPBuffer<CR><F5>
