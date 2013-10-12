@@ -15,7 +15,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'kien/ctrlp.vim'
 Bundle 'majutsushi/tagbar'
-Bundle 'godlygeek/tabular'
 Bundle 'ervandew/supertab'
 
 " Snippets
