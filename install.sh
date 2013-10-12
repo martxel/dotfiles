@@ -19,6 +19,7 @@ dotfiles[$SRC/zprofile]=$DST/.zprofile
 dotfiles[$SRC/martxel.zsh-theme]=$DST/.oh-my-zsh/custom/themes/martxel.zsh-theme
 dotfiles[$SRC/ssh/config]=$DST/.ssh/config
 dotfiles[$SRC/dir_colors]=$DST/.dir_colors
+dotfiles[$SRC/ctags]=$DST/.ctags
 
 # Set force flag
 if [[ $1 = -f ]]; then
