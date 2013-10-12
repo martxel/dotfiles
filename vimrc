@@ -243,7 +243,12 @@ nnoremap <leader>t :tabe .<CR>
 nnoremap <leader>c :w!<CR>:SyntasticCheck<CR>
 
 " ctags
-nnoremap <leader>td <C-]>
+nnoremap <leader>tc :call system('ctags')<CR>
+nnoremap <leader>tt <C-]>
+nnoremap <leader>bb <C-T>
+
+" tagbar
+nnoremap <leader>tb :Tagbar<CR>
 
 " ctrlp
 nnoremap <leader>f :CtrlP<CR><F5>
@@ -256,6 +261,3 @@ nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gp :Git push<CR>
-
-" tagbar
-nnoremap <leader>tb :Tagbar<CR>
