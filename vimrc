@@ -28,7 +28,7 @@ map <c-space> ?
 " Syntax highlighting
 syntax enable
 set background=dark
-colorscheme base16-default
+colorscheme jellybeans
 
 " Always show status line
 set laststatus=2
@@ -196,23 +196,23 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global=1
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
+
 " PLUGINS
 
 " syntastic
 " status line format
 let g:syntastic_stl_format = ' %E{Err: %fe #%e}%B{ | }%W{Warn: %fw #%w} '
-" active mode disabled for sass and scss
-let g:syntastic_mode_map = {
-  \'mode': 'active',
-  \'active_filetypes': [],
-  \'passive_filetypes': ['sass', 'scss']}
+" passive mode
+let g:syntastic_mode_map = { 'mode': 'passive',
+                           \ 'active_filetypes': [],
+                           \ 'passive_filetypes': [] }
 
 " vim-airline
 let g:airline_enable_branch=1
 let g:airline_branch_empty_message='no branch'
 let g:airline_enable_syntastic=1
 let g:airline_enable_tagbar=1
-let g:airline_theme='base16'
+let g:airline_theme='jellybeans'
 let g:airline_powerline_fonts=1
 " vim-airline - custom colors for syntastic and warnings
 hi WarningMsg term=standout ctermbg=236
@@ -226,3 +226,33 @@ let g:SuperTabDefaultCompletionType='context'
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+
+" Custom mappings
+
+" general
+nnoremap <leader>w :w!<CR>
+nnoremap <leader>q :q!<CR>
+nnoremap <leader>wq :wq<CR>
+nnoremap <leader>h :noh<CR>
+nnoremap <leader>s :split .<CR>
+nnoremap <leader>vs :vsplit .<CR>
+nnoremap <leader>t :tabe .<CR>
+
+" syntastic
+nnoremap <leader>c :w!<CR>:SyntasticCheck<CR>
+
+" ctrlp
+nnoremap <leader>f :CtrlP<CR><F5>
+nnoremap <leader>b :CtrlPBuffer<CR><F5>
+
+" fugitive
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gl :Glog<CR>
+nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gp :Git push<CR>
+
+" tagbar
+nnoremap <leader>tb :Tagbar<CR>
