@@ -19,3 +19,6 @@ export WORKON_HOME=~/.pyenv
 
 # ls colors
 eval `dircolors $HOME/.dir_colors`
+ 
+# golang
+export GOPATH=~/go
