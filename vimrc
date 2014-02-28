@@ -99,6 +99,7 @@ set wrap
 
 " Indentation by filetype
 autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType c setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType python setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType php setlocal shiftwidth=4 softtabstop=4 expandtab
