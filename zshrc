@@ -40,7 +40,7 @@ ZSH_THEME="martxel"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bundler gem git rails4 rbenv ssh-agent virtualenvwrapper)
+plugins=(bundler gem git rails rbenv ssh-agent virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
