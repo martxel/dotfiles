@@ -88,6 +88,9 @@ set showmatch
 " Blink for 4 tenths of a second when matching brackets
 set matchtime=4
 
+" Mouse support in normal mode
+set mouse=n
+
 " Indentation
 set expandtab
 set smarttab
