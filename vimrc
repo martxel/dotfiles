@@ -12,8 +12,8 @@ filetype plugin indent on
 set autoread
 
 " Map leader
-let mapleader = ","
-let g:mapleader = ","
+let mapleader = ' '
+let g:mapleader = ' '
 
 " Window movement
 map <C-j> <C-W>j
@@ -22,8 +22,8 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Search
-map <space> /
-map <c-space> ?
+" map <space> /
+" map <c-space> ?
 
 " Syntax highlighting
 syntax enable
@@ -89,7 +89,7 @@ set showmatch
 set matchtime=4
 
 " Mouse support in normal mode
-set mouse=n
+" set mouse=n
 
 " Indentation
 set expandtab
@@ -107,8 +107,8 @@ autocmd FileType c setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType python setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType php setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 expandtab
-autocmd FileType go setlocal shiftwidth=4 tabstop=4 noexpandtab
-autocmd FileType snippets setlocal shiftwidth=4 tabstop=4 noexpandtab
+autocmd FileType go setlocal shiftwidth=2 tabstop=2 noexpandtab
+autocmd FileType snippets setlocal shiftwidth=2 tabstop=2 noexpandtab
 
 " Display extra whitespace
 set listchars=tab:»·,trail:·
@@ -265,3 +265,7 @@ nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gp :Git push<CR>
+
+" go
+au Filetype go nnoremap <buffer> <leader>i :exe 'GoImport ' . expand('<cword>')<CR>
+au Filetype go nnoremap <leader>r :GoRun %<CR>
