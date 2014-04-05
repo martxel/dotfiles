@@ -19,6 +19,7 @@ Bundle 'ervandew/supertab'
 
 " Snippets
 Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
 Bundle 'martxel/ultisnips-snippets'
 
 " Color schemes
@@ -31,7 +32,7 @@ Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-rails'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
-Bundle 'fsouza/go.vim'
+Bundle 'fatih/vim-go'
 Bundle 'othree/html5.vim'
 Bundle 'slim-template/vim-slim'
 
