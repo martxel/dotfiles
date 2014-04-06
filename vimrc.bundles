@@ -24,6 +24,7 @@ Bundle 'martxel/ultisnips-snippets'
 
 " Color schemes
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'chriskempson/base16-vim'
 
 " Visual
 Bundle 'bling/vim-airline'
