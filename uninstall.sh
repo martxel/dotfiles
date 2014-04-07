@@ -9,8 +9,8 @@ for file in $files; do
   if [[ -h $HOME/.$file ]]; then
     rm -frv $HOME/.$file
   else
-    echo "$HOME/.$file is not a symbolic link or doesn't exist"
+    echo -e "\e[33m$HOME/.$file is not a symbolic link or doesn't exist\e[0m"
   fi
 done
 
-echo Done!
+echo -e "\e[32mDone!\e[0m"

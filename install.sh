@@ -6,7 +6,16 @@ files="zprezto ctags dir_colors gemrc gitconfig gitignore tmux.conf \
 
 # link dotfiles
 for file in $files; do
-  ln -sv $PWD/$file $HOME/.$file
+  # remove old links
+  if [[ -h $HOME/.$file ]]; then
+    rm -frv $HOME/.$file
+  fi
+  # create links if there aren't files with the same name
+  if [[ ! -e $HOME/.$file ]]; then
+    ln -sv $PWD/$file $HOME/.$file
+  else
+    echo -e "\e[33m$HOME/.$file already exists and it's not a symbolic link\e[0m"
+  fi
 done
 
-echo Done!
+echo -e "\e[32mDone!\e[0m"
