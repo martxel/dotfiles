@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ignored_files="README.md\|install.sh\|uninstall.sh\|gnome-terminal-colors"
+ignored_files="README.md\|install.sh\|uninstall.sh\|gnome-terminal-colors\|screenshoot.png"
 files=$(ls -1 | grep -vw $ignored_files)
 
 # remove symbolic links

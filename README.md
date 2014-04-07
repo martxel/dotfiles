@@ -8,3 +8,6 @@
 
         cd ~/dotfiles
         ./install.sh
+
+## Screenshoot
+![Screenshoot](https://github.com/martxel/dotfiles/raw/master/screenshoot.png "Screenshoot")
