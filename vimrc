@@ -265,8 +265,8 @@ let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': [] }
 
-hi WarningMsg ctermbg=10 ctermfg=3
-hi Warning ctermbg=10 ctermfg=3
+hi WarningMsg ctermbg=10 ctermfg=1
+hi Warning ctermbg=10 ctermfg=1
 hi ErrorMsg ctermbg=10 ctermfg=1
 hi Error ctermbg=10 ctermfg=1
 hi link SyntasticMsgWarningLine Warning
