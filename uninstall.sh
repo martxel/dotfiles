@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-# dotfiles
-files="zprezto ctags dir_colors gemrc gitconfig gitignore tmux.conf \
-  vimrc zlogin zlogout zpreztorc zprofile zshenv zshrc"
+ignored_files="README.md\|install.sh\|uninstall.sh\|gnome-terminal-colors"
+files=$(ls -1 | grep -vw $ignored_files)
 
 # remove symbolic links
 for file in $files; do
