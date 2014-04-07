@@ -66,6 +66,7 @@ call LoadVundle()
 set autoread
 
 " Map leader
+nnoremap <space> <NOP>
 let mapleader = ' '
 let g:mapleader = ' '
 
