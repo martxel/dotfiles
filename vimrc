@@ -5,62 +5,59 @@ filetype off
 " Install and load vundles
 " from https://github.com/machuga/dotfiles
 function! LoadVundle()
-    let vundle_installed=filereadable(expand('~/.vim/bundle/vundle/README.md'))
+  let vundle_installed=filereadable(expand('~/.vim/bundle/vundle/README.md'))
 
-    if vundle_installed == 0
-        echo "Creating backups directory..."
-        silent !mkdir -p ~/.vim/backups
-        echo "Installing Vundle.."
-        echo ""
-        silent !mkdir -p ~/.vim/bundle
-        silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-    endif
+  if vundle_installed == 0
+    echo "Creating backups directory..."
+    silent !mkdir -p ~/.vim/backups
+    echo "Installing Vundle.."
+    echo ""
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+  endif
 
-    set rtp+=~/.vim/bundle/vundle/
-    call vundle#rc()
-    
-    " Bundle definitions
+  set rtp+=~/.vim/bundle/vundle/
+  call vundle#rc()
 
-    Bundle 'gmarik/vundle'
+  " Bundle definitions
 
-    " Utils
-    Bundle 'tpope/vim-fugitive'
-    Bundle 'tpope/vim-surround'
-    Bundle 'scrooloose/syntastic'
-    Bundle 'scrooloose/nerdcommenter'
-    Bundle 'kien/ctrlp.vim'
-    Bundle 'majutsushi/tagbar'
-    Bundle 'ervandew/supertab'
+  Bundle 'gmarik/vundle'
 
-    " Snippets
-    Bundle 'SirVer/ultisnips'
-    Bundle 'honza/vim-snippets'
-    Bundle 'martxel/ultisnips-snippets'
+  " Utils
+  Bundle 'tpope/vim-fugitive'
+  Bundle 'tpope/vim-surround'
+  Bundle 'scrooloose/syntastic'
+  Bundle 'scrooloose/nerdcommenter'
+  Bundle 'kien/ctrlp.vim'
+  Bundle 'majutsushi/tagbar'
+  Bundle 'ervandew/supertab'
 
-    " Color schemes
-    Bundle 'nanotech/jellybeans.vim'
-    Bundle 'chriskempson/base16-vim'
+  " Snippets
+  Bundle 'SirVer/ultisnips'
+  Bundle 'honza/vim-snippets'
+  Bundle 'martxel/ultisnips-snippets'
 
-    " Visual
-    Bundle 'bling/vim-airline'
+  " Color schemes
+  Bundle 'nanotech/jellybeans.vim'
+  Bundle 'chriskempson/base16-vim'
 
-    " Filetype related
-    Bundle 'tpope/vim-rails'
-    Bundle 'kchmck/vim-coffee-script'
-    Bundle 'pangloss/vim-javascript'
-    Bundle 'fatih/vim-go'
-    Bundle 'othree/html5.vim'
-    Bundle 'slim-template/vim-slim'
-    Bundle 'Blackrush/vim-gocode'
+  " Filetype related
+  Bundle 'tpope/vim-rails'
+  Bundle 'kchmck/vim-coffee-script'
+  Bundle 'pangloss/vim-javascript'
+  Bundle 'fatih/vim-go'
+  Bundle 'othree/html5.vim'
+  Bundle 'slim-template/vim-slim'
+  Bundle 'Blackrush/vim-gocode'
 
-    if vundle_installed==0
-        echo vundle_installed
-        echo "Vundle Installed, now Installing Bundles..."
-        echo ""
-        :BundleInstall
-    endif
+  if vundle_installed==0
+    echo vundle_installed
+    echo "Vundle Installed, now Installing Bundles..."
+    echo ""
+    :BundleInstall
+  endif
 
-    filetype plugin indent on
+  filetype plugin indent on
 endfunction
 
 call LoadVundle()
@@ -268,17 +265,16 @@ let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': [] }
 
-" vim-airline
-let g:airline_enable_branch=1
-let g:airline_branch_empty_message=''
-let g:airline_enable_syntastic=1
-let g:airline_enable_tagbar=1
-let g:airline_theme='base16'
-let g:airline_powerline_fonts=1
-" vim-airline - custom colors for syntastic and warnings
-hi WarningMsg term=standout ctermbg=236
-" vim-airline - avoid delay from I to N mode
-set ttimeoutlen=50
+hi WarningMsg ctermbg=10 ctermfg=3
+hi Warning ctermbg=10 ctermfg=3
+hi ErrorMsg ctermbg=10 ctermfg=1
+hi Error ctermbg=10 ctermfg=1
+hi link SyntasticMsgWarningLine Warning
+hi link SyntasticMsgWarningSign Warning
+hi link SyntasticMsgWarning Warning
+hi link SyntasticMsgErrorLine Error
+hi link SyntasticMsgErrorSign Error
+hi link SyntasticMsgError Error
 
 " supertab
 let g:SuperTabDefaultCompletionType='context'
@@ -326,3 +322,16 @@ nnoremap <leader>gp :Git push<CR>
 " go
 au Filetype go nnoremap <buffer> <leader>i :exe 'GoImport ' . expand('<cword>')<CR>
 au Filetype go nnoremap <leader>r :GoRun %<CR>
+
+" statusline
+hi User1 ctermbg=10 ctermfg=250
+
+set statusline=%1*
+set statusline+=%F%m%r%h%w\ 
+set statusline+=%{fugitive#statusline()}\ 
+set statusline+=%=
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%1*
+set statusline+=[%{strlen(&fenc)?&fenc:&enc}]
+set statusline+=\ [line\ %l\/%L]
