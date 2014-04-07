@@ -213,7 +213,7 @@ let g:syntastic_mode_map = { 'mode': 'passive',
 
 " vim-airline
 let g:airline_enable_branch=1
-let g:airline_branch_empty_message='no branch'
+let g:airline_branch_empty_message=''
 let g:airline_enable_syntastic=1
 let g:airline_enable_tagbar=1
 let g:airline_theme='base16'
