@@ -9,7 +9,7 @@ for file in $files; do
   if [[ -h $HOME/.$file ]]; then
     rm -frv $HOME/.$file
   else
-    echo $HOME/.$file is not a symbolic link or doesn't exist
+    echo "$HOME/.$file is not a symbolic link or doesn't exist"
   fi
 done
 
