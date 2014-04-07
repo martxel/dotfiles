@@ -1,12 +1,69 @@
 set nocompatible
+filetype off
 
-" Vundle bundles
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
-endif
+" LoadVundle()
+" Install and load vundles
+" from https://github.com/machuga/dotfiles
+function! LoadVundle()
+    let vundle_installed=filereadable(expand('~/.vim/bundle/vundle/README.md'))
 
-" Filetype plugins
-filetype plugin indent on
+    if vundle_installed == 0
+        echo "Creating backups directory..."
+        silent !mkdir -p ~/.vim/backups
+        echo "Installing Vundle.."
+        echo ""
+        silent !mkdir -p ~/.vim/bundle
+        silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+    endif
+
+    set rtp+=~/.vim/bundle/vundle/
+    call vundle#rc()
+    
+    " Bundle definitions
+
+    Bundle 'gmarik/vundle'
+
+    " Utils
+    Bundle 'tpope/vim-fugitive'
+    Bundle 'tpope/vim-surround'
+    Bundle 'scrooloose/syntastic'
+    Bundle 'scrooloose/nerdcommenter'
+    Bundle 'kien/ctrlp.vim'
+    Bundle 'majutsushi/tagbar'
+    Bundle 'ervandew/supertab'
+
+    " Snippets
+    Bundle 'SirVer/ultisnips'
+    Bundle 'honza/vim-snippets'
+    Bundle 'martxel/ultisnips-snippets'
+
+    " Color schemes
+    Bundle 'nanotech/jellybeans.vim'
+    Bundle 'chriskempson/base16-vim'
+
+    " Visual
+    Bundle 'bling/vim-airline'
+
+    " Filetype related
+    Bundle 'tpope/vim-rails'
+    Bundle 'kchmck/vim-coffee-script'
+    Bundle 'pangloss/vim-javascript'
+    Bundle 'fatih/vim-go'
+    Bundle 'othree/html5.vim'
+    Bundle 'slim-template/vim-slim'
+    Bundle 'Blackrush/vim-gocode'
+
+    if vundle_installed==0
+        echo vundle_installed
+        echo "Vundle Installed, now Installing Bundles..."
+        echo ""
+        :BundleInstall
+    endif
+
+    filetype plugin indent on
+endfunction
+
+call LoadVundle()
 
 " Autoread changes
 set autoread
