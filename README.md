@@ -2,11 +2,9 @@
 
 1. Clone the repository recursively:
 
-        git clone --recursive https://github.com/martxel/dotfiles
+        git clone --recursive https://github.com/martxel/dotfiles ~/dotfiles
 
 2. Change directory to `dotfiles` and run the installation script:
 
-        cd dotfiles
+        cd ~/dotfiles
         ./install.sh
-
-    Run with `-f` to automatically replace existing files.
