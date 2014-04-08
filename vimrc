@@ -292,15 +292,16 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 "
 
 " General
+nnoremap <CR> :noh<CR><CR>
 nnoremap <leader>w :w!<CR>
+nnoremap <leader>wa :wa<CR>
 nnoremap <leader>q :q!<CR>
 nnoremap <leader>wq :wq<CR>
-nnoremap <leader>h :noh<CR>
 nnoremap <leader>s :split .<CR>
 nnoremap <leader>vs :vsplit .<CR>
 nnoremap <leader>t :tabe .<CR>
 
-" Syntastic
+"Syntastic
 nnoremap <leader>c :w!<CR>:SyntasticCheck<CR>
 
 " Ctags
