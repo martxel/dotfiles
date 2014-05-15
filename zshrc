@@ -14,6 +14,9 @@ fi
 
 # Custom aliases
 
+# Emacs
+alias emacs="emacs -nw"
+
 # Force TERM=screen-256color on ssh
 alias ssh="TERM=screen-256color ssh"
 
