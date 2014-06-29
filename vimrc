@@ -19,42 +19,42 @@ function! LoadVundle()
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc()
 
-  " Bundle definitions
+  " Plugin definitions
 
-  Bundle 'gmarik/vundle'
+  Plugin 'gmarik/vundle'
 
   " Utils
-  Bundle 'tpope/vim-fugitive'
-  Bundle 'tpope/vim-surround'
-  Bundle 'scrooloose/syntastic'
-  Bundle 'scrooloose/nerdcommenter'
-  Bundle 'kien/ctrlp.vim'
-  Bundle 'majutsushi/tagbar'
-  Bundle 'ervandew/supertab'
+  Plugin 'tpope/vim-fugitive'
+  Plugin 'tpope/vim-surround'
+  Plugin 'scrooloose/syntastic'
+  Plugin 'scrooloose/nerdcommenter'
+  Plugin 'kien/ctrlp.vim'
+  Plugin 'majutsushi/tagbar'
+  Plugin 'ervandew/supertab'
 
   " Snippets
-  Bundle 'SirVer/ultisnips'
-  Bundle 'honza/vim-snippets'
-  Bundle 'martxel/ultisnips-snippets'
+  Plugin 'SirVer/ultisnips'
+  Plugin 'honza/vim-snippets'
+  Plugin 'martxel/ultisnips-snippets'
 
   " Color schemes
-  Bundle 'nanotech/jellybeans.vim'
-  Bundle 'chriskempson/base16-vim'
+  Plugin 'nanotech/jellybeans.vim'
+  Plugin 'chriskempson/base16-vim'
 
   " Filetype related
-  Bundle 'tpope/vim-rails'
-  Bundle 'kchmck/vim-coffee-script'
-  Bundle 'pangloss/vim-javascript'
-  Bundle 'fatih/vim-go'
-  Bundle 'othree/html5.vim'
-  Bundle 'slim-template/vim-slim'
-  Bundle 'Blackrush/vim-gocode'
+  Plugin 'tpope/vim-rails'
+  Plugin 'kchmck/vim-coffee-script'
+  Plugin 'pangloss/vim-javascript'
+  Plugin 'fatih/vim-go'
+  Plugin 'othree/html5.vim'
+  Plugin 'slim-template/vim-slim'
+  Plugin 'Blackrush/vim-gocode'
 
   if vundle_installed==0
     echo vundle_installed
-    echo "Vundle Installed, now Installing Bundles..."
+    echo "Vundle Installed, now Installing Plugins..."
     echo ""
-    :BundleInstall
+    :PluginInstall
   endif
 
   filetype plugin indent on
