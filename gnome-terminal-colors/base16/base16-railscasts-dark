@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Base 16 railscasts dark colors for gnome-terminal 3.8.x
+# Base 16 railscasts dark colors for gnome-terminal 3.10
 
 base00=#2b2b2b
 base01=#272935

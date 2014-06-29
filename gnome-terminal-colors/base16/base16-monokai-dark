@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Base 16 monokai dark colors for gnome-terminal 3.8.x
+# Base 16 monokai dark colors for gnome-terminal 3.10
 
 base00=#272822
 base01=#383830

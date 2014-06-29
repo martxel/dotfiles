@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Base 16 mocha dark colors for gnome-terminal 3.8.x
+# Base 16 mocha dark colors for gnome-terminal 3.10
 
 base00=#3B3228
 base01=#534636

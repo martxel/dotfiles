@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Base 16 tomorrow dark colors for gnome-terminal 3.8.x
+# Base 16 tomorrow dark colors for gnome-terminal 3.10
 
 base00=#1d1f21
 base01=#282a2e

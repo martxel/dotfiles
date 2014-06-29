@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Base 16 greenscreen dark colors for gnome-terminal 3.8.x
+# Base 16 greenscreen dark colors for gnome-terminal 3.10
 
 base00=#001100
 base01=#003300

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Base 16 default dark colors for gnome-terminal 3.8.x
+# Base 16 default dark colors for gnome-terminal 3.10
 
 base00=#151515
 base01=#202020
