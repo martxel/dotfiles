@@ -51,7 +51,7 @@ export TERM=xterm-256color
 export GOPATH=$HOME/go
 
 # Scala
-export SCALA_HOME=$HOME/apps/scala-2.11.1
+export SCALA_HOME=$HOME/Applications/scala
 
 # Set the list of directories that Zsh searches for programs.
 path=(
