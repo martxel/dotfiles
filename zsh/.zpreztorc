@@ -26,7 +26,6 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'ruby' \
   'git' \
-  'tmux' \
   'ssh' \
   'pacman' \
   'history-substring-search'

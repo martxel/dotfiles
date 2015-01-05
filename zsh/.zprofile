@@ -56,7 +56,7 @@ export SCALA_HOME=$HOME/Applications/scala
 # Set the list of directories that Zsh searches for programs.
 path=(
   $HOME/bin
-  $HOME/Applications/*/bin
+  #$HOME/Applications/*/bin
   $GOPATH/bin
   /usr/local/{bin,sbin}
   $path
