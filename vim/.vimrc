@@ -83,7 +83,7 @@ map <C-l> <C-W>l
 " Syntax highlighting
 syntax enable
 set background=dark
-colorscheme base16-tomorrow
+colorscheme base16-default
 
 " Always show status line
 set laststatus=2
