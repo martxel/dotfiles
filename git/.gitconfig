@@ -3,7 +3,7 @@
 	email = martxel@gmail.com
 [core]
 	editor = vim
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore_global
 [merge]
 	tool = vimdiff
 [color]
