@@ -20,4 +20,6 @@ if (( $+commands[fortune] )); then
   print
 fi
 
-[ -z "$TMUX" ] && archey3
+if [ -z "$TMUX" ]; then
+  archey3
+fi
