@@ -20,3 +20,4 @@ if (( $+commands[fortune] )); then
   print
 fi
 
+archey3
