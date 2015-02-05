@@ -8,6 +8,7 @@
 	tool = vimdiff
 [color]
 	ui = true
+	interactive = auto
 [alias]
 	br = branch
 	ba = branch -a
@@ -18,7 +19,9 @@
 	dc = difftool --cached
 	aa = add --all
 	pom = push origin master
+	pod = push origin develop
 	last = log -1 HEAD
+	lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [push]
 	default = simple
 [diff]
