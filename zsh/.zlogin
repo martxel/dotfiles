@@ -20,4 +20,4 @@ if (( $+commands[fortune] )); then
   print
 fi
 
-archey3
+[ -z "$TMUX" ] && archey3
