@@ -53,6 +53,9 @@ export GOPATH=$HOME/go
 # Scala
 export SCALA_HOME=$HOME/Applications/scala
 
+# Python virtualenvs
+export WORKON_HOME=$HOME/.virtualenvs
+
 # Set the list of directories that Zsh searches for programs.
 path=(
   $HOME/bin
