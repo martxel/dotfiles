@@ -177,7 +177,7 @@ set whichwrap+=<,>,h,l
 
 " 80 char lines
 set linebreak
-set textwidth=80
+set textwidth=0
 set colorcolumn=81
 
 " UTF-8 encoding
