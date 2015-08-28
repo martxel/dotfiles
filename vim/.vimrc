@@ -41,14 +41,22 @@ function! LoadVundle()
   Plugin 'nanotech/jellybeans.vim'
   Plugin 'chriskempson/base16-vim'
 
-  " Filetype related
-  Plugin 'tpope/vim-rails'
+  " Web related
+  Plugin 'othree/html5.vim'
   Plugin 'kchmck/vim-coffee-script'
   Plugin 'pangloss/vim-javascript'
+
+  " Ruby
+  Plugin 'tpope/vim-rails'
+
+  " Go
   Plugin 'fatih/vim-go'
-  Plugin 'othree/html5.vim'
-  Plugin 'slim-template/vim-slim'
   Plugin 'Blackrush/vim-gocode'
+
+  " Python
+
+  " Templating
+  Plugin 'slim-template/vim-slim'
 
   if vundle_installed==0
     echo vundle_installed
