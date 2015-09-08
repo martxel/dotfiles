@@ -51,7 +51,6 @@ function! LoadVundle()
 
   " Go
   Plugin 'fatih/vim-go'
-  Plugin 'Blackrush/vim-gocode'
 
   " Python
 
