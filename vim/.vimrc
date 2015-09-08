@@ -332,8 +332,8 @@ nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gp :Git push<CR>
 
 " Go
-au Filetype go nnoremap <buffer> <leader>i :exe 'GoImport ' . expand('<cword>')<CR>
-au Filetype go nnoremap <leader>r :GoRun %<CR>
+au Filetype go nmap <leader>r <Plug>(go-run)
+let g:go_fmt_command = "goimports"
 
 "
 " statusline
